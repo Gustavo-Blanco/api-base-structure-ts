@@ -10,6 +10,7 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+console.log(process.env.DATABASE_URL);
 
 //routes
 app.use("/api/v1", api);
